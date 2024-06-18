@@ -10,10 +10,12 @@ public class CriarUsuario {
     private final RepositorioDeUsuario repositorio;
 
     public CriarUsuario(RepositorioDeUsuario repositorio) {
+
         this.repositorio = repositorio;
     }
 
     public Usuario cadastrarUsuario(@Valid Usuario usuario) {
+
         return repositorio.cadastrarUsuario(usuario);
     }
 }
